@@ -1,10 +1,15 @@
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar_menu');
+// Adding some subtle interactivity to reinforce the discord theme
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('h1, h2, p, li');
 
-// Dispplay Mobile Menu
-const mobileMenu = () => {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-}
+    elements.forEach(el => {
+        el.addEventListener('mouseover', () => {
+            el.style.transform = 'rotate(-2deg) scale(1.05)';
+            el.style.transition = 'transform 0.1s ease';
+        });
 
-menu.addEventListener('click', mobileMenu);
+        el.addEventListener('mouseout', () => {
+            el.style.transform = 'rotate(0deg) scale(1)';
+        });
+    });
+});
