@@ -1,12 +1,14 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #2C2F33;
+    background: url('assets/images/picture-dev1.png') no-repeat center center fixed; /* Full-page background */
+    background-size: cover; /* Ensures the background covers the full page */
     color: #fff;
     height: 100vh;
     display: flex;
 }
 
+/* Adjust discord-container to have semi-transparent effect but not a solid background */
 .discord-container {
     display: flex;
     width: 100%;
@@ -14,7 +16,7 @@ body {
 
 .sidebar {
     width: 20%;
-    background-color: #202225;
+    background-color: rgba(32, 34, 37, 0.8); /* Semi-transparent to show the background image */
     padding: 20px;
     box-sizing: border-box;
 }
@@ -35,22 +37,29 @@ body {
 }
 
 .channel {
-    background-color: #2F3136;
+    background-color: rgba(47, 49, 54, 0.8); /* Semi-transparent background for channel items */
     padding: 10px;
     margin: 10px 0;
     cursor: pointer;
+    border-radius: 5px;
+    color: #B9BBBE;
+}
+
+.channel:hover {
+    background-color: rgba(64, 68, 75, 0.9); /* Darken slightly on hover */
+    color: #fff;
 }
 
 .main-content {
     flex: 1;
-    background-color: #36393F;
+    background-color: rgba(54, 57, 63, 0.8); /* Semi-transparent background to show background image */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .top-bar {
-    background-color: #2F3136;
+    background-color: rgba(47, 49, 54, 0.8);
     padding: 15px;
     text-align: center;
 }
@@ -83,53 +92,46 @@ body {
     border-radius: 10px;
 }
 
-.chat-window {
-    background-color: #2F3136;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.message {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #40444B;
-    border-radius: 5px;
-}
-
-.username {
-    font-weight: bold;
-    cursor: pointer;
-    color: #7289DA;
-}
-
-.user-bar {
-    padding: 15px;
-    background-color: #2F3136;
-    display: flex;
+/* Profile Section */
+.profile-section {
+    display: none;
     align-items: center;
+    background-color: rgba(47, 49, 54, 0.8);
+    padding: 15px;
+    margin-top: 10px;
+    border-top: 1px solid rgba(64, 68, 75, 0.8);
 }
 
-.user-info {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.avatar {
+.profile-section .avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.user-name {
+.profile-section .user-name {
     font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.voice-connected {
+    background-color: #43B581;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.voice-status {
+    color: #fff;
+    font-weight: bold;
 }
 
 /* Right Sidebar */
 .right-sidebar {
     width: 20%;
-    background-color: #2F3136;
+    background-color: rgba(47, 49, 54, 0.8); /* Semi-transparent to show background image */
     padding: 20px;
     box-sizing: border-box;
 }
@@ -180,38 +182,4 @@ body {
 
 .status-dot.offline {
     background-color: #747F8D;
-}
-
-/* Modal Styling */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background-color: #36393F;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-}
-
-.modal-content p {
-    margin: 10px 0;
-}
-
-.close {
-    color: #fff;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
 }

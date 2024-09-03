@@ -35,60 +35,60 @@
                 </div>
             </div>
 
-            <!-- Hobbies Page (Scrollable) -->
-            <div class="content" id="hobbies" style="display:none; overflow-y: scroll;">
-                <header class="top-bar">
-                    <h3>Hobbies</h3>
-                </header>
-                <div class="content-page hobbies-content">
-                    <h2>My Hobbies</h2>
-                    
-                    <!-- Travelling Hobby -->
-                    <div class="hobby">
-                        <h3>Travelling</h3>
-                        <img src="travel-photo.jpg" alt="Travelling" class="hobby-img">
-                        <p>I love to travel and explore new places. Here's a photo from my recent trip.</p>
-                    </div>
+           <!-- Hobbies Page (Scrollable) -->
+           <div class="content" id="hobbies" style="display:none; overflow-y: scroll;">
+            <header class="top-bar">
+                <h3>Hobbies</h3>
+            </header>
+            <div class="content-page hobbies-content">
+                <h2>My Hobbies</h2>
+                
+                <!-- Travelling Hobby -->
+                <div class="hobby">
+                    <h3>Travelling</h3>
+                    <img src="travel-photo.jpg" alt="Travelling" class="hobby-img">
+                    <p>I love to travel and explore new places. Here's a photo from my recent trip.</p>
+                </div>
 
-                    <!-- Basketball Hobby -->
-                    <div class="hobby">
-                        <h3>Basketball</h3>
-                        <img src="basketball-photo.jpg" alt="Basketball" class="hobby-img">
-                        <p>Basketball is my favorite sport. I play with friends whenever I get the chance.</p>
-                    </div>
+                <!-- Basketball Hobby -->
+                <div class="hobby">
+                    <h3>Basketball</h3>
+                    <img src="basketball-photo.jpg" alt="Basketball" class="hobby-img">
+                    <p>Basketball is my favorite sport. I play with friends whenever I get the chance.</p>
+                </div>
 
-                    <!-- Powerlifting Hobby -->
-                    <div class="hobby">
-                        <h3>Powerlifting</h3>
-                        <video class="hobby-video" controls>
-                            <source src="powerlifting-video.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <p>Powerlifting is a big part of my life. Here's a video of me hitting a new PR!</p>
-                    </div>
+                <!-- Powerlifting Hobby -->
+                <div class="hobby">
+                    <h3>Powerlifting</h3>
+                    <video class="hobby-video" controls>
+                        <source src="powerlifting-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Powerlifting is a big part of my life. Here's a video of me hitting a new PR!</p>
+                </div>
 
-                    <!-- Running Hobby -->
-                    <div class="hobby">
-                        <h3>Running</h3>
-                        <img src="running-photo.jpg" alt="Running" class="hobby-img">
-                        <p>I enjoy running to stay in shape and clear my mind. Here's a shot from my last marathon.</p>
-                    </div>
+                <!-- Running Hobby -->
+                <div class="hobby">
+                    <h3>Running</h3>
+                    <img src="running-photo.jpg" alt="Running" class="hobby-img">
+                    <p>I enjoy running to stay in shape and clear my mind. Here's a shot from my last marathon.</p>
+                </div>
 
-                    <!-- Movies Hobby -->
-                    <div class="hobby">
-                        <h3>Movies</h3>
-                        <img src="movies-photo.jpg" alt="Movies" class="hobby-img">
-                        <p>I'm a huge movie buff. Here's a collection of some of my favorite movies.</p>
-                    </div>
+                <!-- Movies Hobby -->
+                <div class="hobby">
+                    <h3>Movies</h3>
+                    <img src="movies-photo.jpg" alt="Movies" class="hobby-img">
+                    <p>I'm a huge movie buff. Here's a collection of some of my favorite movies.</p>
+                </div>
 
-                    <!-- Learning New Things Hobby -->
-                    <div class="hobby">
-                        <h3>Learning New Things</h3>
-                        <img src="learning-photo.jpg" alt="Learning" class="hobby-img">
-                        <p>I'm always looking to expand my knowledge. Whether it's coding or a new skill, I'm always up for learning.</p>
-                    </div>
+                <!-- Learning New Things Hobby -->
+                <div class="hobby">
+                    <h3>Learning New Things</h3>
+                    <img src="learning-photo.jpg" alt="Learning" class="hobby-img">
+                    <p>I'm always looking to expand my knowledge. Whether it's coding or a new skill, I'm always up for learning.</p>
                 </div>
             </div>
+        </div>
 
             <!-- Links Page -->
             <div class="content" id="links" style="display:none;">
@@ -105,12 +105,14 @@
                 </div>
             </div>
 
-            <footer class="user-bar">
-                <div class="user-info" onclick="openProfile()">
-                    <img src="user-icon.png" alt="Vitto's Avatar" class="avatar">
-                    <span class="user-name">Vitto</span>
+            <!-- Profile Section -->
+            <div class="profile-section" id="profile-info" style="display:none;">
+                <img src="user-icon.png" alt="Vitto's Avatar" class="avatar">
+                <span class="user-name">Vitto</span>
+                <div class="voice-connected">
+                    <span class="voice-status">Voice Connected</span>
                 </div>
-            </footer>
+            </div>
         </section>
 
         <!-- Right Sidebar (Friends List with Status Dots) -->
@@ -163,16 +165,6 @@
                 </div>
             </div>
         </aside>
-    </div>
-
-    <!-- Profile Modal -->
-    <div class="modal" id="profile-modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeProfile()">&times;</span>
-            <h2>Profile</h2>
-            <p><strong>Name:</strong> Vitto</p>
-            <p><strong>Degree:</strong> Computer Science</p>
-        </div>
     </div>
 
     <script src="script.js"></script>
