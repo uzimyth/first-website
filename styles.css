@@ -78,17 +78,18 @@ body {
 }
 
 .hobby {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .hobby-img {
-    width: 100%;
+    width: 30%;
     height: auto;
     border-radius: 10px;
 }
 
+
 .hobby-video {
-    width: 100%;
+    width: 30%;
     border-radius: 10px;
 }
 
