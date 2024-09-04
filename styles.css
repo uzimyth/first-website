@@ -12,6 +12,8 @@ body {
 .discord-container {
     display: flex;
     width: 100%;
+    min-height: 100vh;
+    background-color: transparent; /* Set to fully transparent */
 }
 
 .sidebar {
@@ -19,6 +21,9 @@ body {
     background-color: rgba(32, 34, 37, 0.8); /* Semi-transparent to show the background image */
     padding: 20px;
     box-sizing: border-box;
+    min-height: 100vh;
+    height: 100vh; /* Ensure it takes full height of the viewport */
+    overflow-y: auto; /* Enable scrolling when content overflows */
 }
 
 .logo h2 {
@@ -56,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
 }
 
 .top-bar {
@@ -70,6 +76,7 @@ body {
 }
 
 .content-page {
+    font-size: 21px;
     padding: 20px;
 }
 
@@ -82,14 +89,14 @@ body {
 }
 
 .hobby-img {
-    width: 30%;
+    width: 33%;
     height: auto;
     border-radius: 10px;
 }
 
 
 .hobby-video {
-    width: 30%;
+    width: 40%;
     border-radius: 10px;
 }
 
@@ -135,10 +142,13 @@ body {
     background-color: rgba(47, 49, 54, 0.8); /* Semi-transparent to show background image */
     padding: 20px;
     box-sizing: border-box;
+    min-height: 100vh;
+    height: 100vh; /* Ensure it takes full height of the viewport */
+    overflow-y: auto; /* Enable scrolling when content overflows */
 }
 
 .friend-list h4 {
-    color: #B9BBBE;
+    color: #14f300;
     margin-bottom: 10px;
 }
 
@@ -212,4 +222,67 @@ body {
 
 .links-list a:hover {
     color: #7289DA; /* Discord blue color on hover */
+}
+
+
+
+/* Discord-like message */
+.discord-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(47, 49, 54, 0.8);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message-header {
+    display: flex;
+    align-items: center;
+}
+
+.message-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message-username {
+    font-size: 16px;
+    font-weight: bold;
+    color: #7289DA;
+    margin-right: 5px;
+}
+
+.message-content {
+    color: #B9BBBE;
+}
+
+.message-sticker {
+    margin-top: 10px;
+}
+
+.emoji {
+    font-size: 100px; /* Large emoji size */
+    display: inline-block;
+    animation: bounce 2s infinite; /* Apply bounce animation */
+}
+
+.text-big {
+    font-size: 60px; /* Large text for "Nice" */
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at original position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up by 20px in the middle */
+    }
 }
