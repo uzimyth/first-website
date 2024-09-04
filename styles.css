@@ -289,10 +289,6 @@ body {
 
 /* Hide the main content on small screens */
 @media (max-width: 768px) {
-    .discord-container {
-        display: none;
-    }
-
     .mobile-warning {
         display: block;
         background-color: #ffcccc;
