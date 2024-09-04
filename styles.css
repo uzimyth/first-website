@@ -286,3 +286,26 @@ body {
         transform: translateY(-20px); /* Move up by 20px in the middle */
     }
 }
+
+/* Hide the main content on small screens */
+@media (max-width: 768px) {
+    .discord-container {
+        display: none;
+    }
+
+    .mobile-warning {
+        display: block;
+        background-color: #ffcccc;
+        color: #000;
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
+/* Hide the mobile warning on larger screens */
+@media (min-width: 768px) {
+    .mobile-warning {
+        display: none;
+    }
+}
