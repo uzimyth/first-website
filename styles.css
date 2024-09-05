@@ -100,6 +100,12 @@ body {
     border-radius: 10px;
 }
 
+.hobby-video-golf {
+    width: 19%;
+    border-radius: 10px;
+    margin-left: 508px;
+}
+
 /* Profile Section */
 .profile-section {
     display: none;
@@ -277,6 +283,12 @@ body {
     margin-bottom: 10px;
 }
 
+.text-med {
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
 /* Bouncing animation */
 @keyframes bounce {
     0%, 100% {
@@ -304,4 +316,43 @@ body {
     .mobile-warning {
         display: none;
     }
+}
+
+
+
+
+
+.picture-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.reaction-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.reaction-from-friend {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.avatar-small {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.friend-name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.reaction-emoji {
+    font-size: 24px;
 }
