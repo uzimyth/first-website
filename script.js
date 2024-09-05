@@ -28,3 +28,8 @@ function showPage(pageId) {
     // Show the profile section
     profileSection.style.display = 'flex';
 }
+
+// Function to run on page load to simulate the "Me" section being clicked
+window.onload = function() {
+    showPage('me');
+};
